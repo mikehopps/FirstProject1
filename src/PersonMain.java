@@ -3,17 +3,20 @@
  */
 public class PersonMain {
 
-    //Make a main method here!
+    //main method here
     public static void main(String[] args) {
+        Person hopps = new Person("Mr. Hopps", 36);
+        Person jaylen = new Person("Jaylen", 17);
 
-        Person me = new Person("Mr. Hopps", 36);
-        me.sayHello();
+        hopps.sayHello();
+        jaylen.sayHello();
 
-        //Make your neighbor!
-        Person friend = new Person("Mrs. Coughlin", 45);
-        friend.sayHello();
+        hopps.haveBirthday();
+        jaylen.haveBirthday();
 
-
+        hopps.sayHello();
+        jaylen.sayHello();
     }
+
 
 }

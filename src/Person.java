@@ -3,21 +3,32 @@
  */
 public class Person {
 
-    //instance fields - the modeling variables
-    //declare the instance fields - the value will come later
-    private int age;  //always    private type name;
+    //Instance Fields!
+    //Big important variables for this class.
+    //declare, but don't assign value.
+    //always private.
+    private int age;
     private String name;
 
-    //constructor - how to build one of these Person things
-    //job: make sure all instance fields have a value
-    public Person(String name, int age){
-        this.name = name;
-        this.age = age;
+    //The constructor.
+    //The job of the constructor is:
+    //assign value to the instance fields
+    public Person(String n, int a){
+        name = n;
+        age = a;
     }
 
-    //methods - the actions a Person can perform
-
+    //methods!  the actions a Person can perform.
     public void sayHello(){
-        System.out.println("Hi! My name is " + name + ", and I'm " + age + " years old.");
+        System.out.println("Hi! My name is " + name + ", and I'm " + age
+            + " years old.");
     }
+
+    public void haveBirthday(){
+//        age = age + 1;
+//        age += 1;
+        age++;  //increment operator: adds one to variable
+    }
+
+
 }
