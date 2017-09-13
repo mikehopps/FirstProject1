@@ -13,9 +13,9 @@ public class Person {
     //The constructor.
     //The job of the constructor is:
     //assign value to the instance fields
-    public Person(String n, int a){
-        name = n;
-        age = a;
+    public Person(String name, int age){
+        this.name = name;
+        this.age = age;
     }
 
     //methods!  the actions a Person can perform.
@@ -27,7 +27,10 @@ public class Person {
     public void haveBirthday(){
 //        age = age + 1;
 //        age += 1;
-        age++;  //increment operator: adds one to variable
+//        this.age += 1;
+        age++;
+
+
     }
 
 
