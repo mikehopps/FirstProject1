@@ -5,12 +5,25 @@ public class MainMath {
 
     public static void main(String[] args) {
 
-        Cylinder can = new Cylinder(4, 2);
+        Rectangle rect1 = new Rectangle(4, 5);
+        Rectangle rect2 = new Rectangle(100, 200, 500, 125); //len=100, wid=75
 
-        can.printVolume();
-        can.scaleBy(2);
+        double sumArea = rect1.getArea() + rect2.getArea();
+        System.out.println(sumArea);
 
-        can.printVolume();
+        //
+//        Cylinder can = new Cylinder(4, 2);
+//
+//        can.printVolume();
+//
+//        can.scaleBy(2);
+//
+//        can.printVolume();
+
+
+
+
+
 
     }
 }
